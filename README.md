@@ -1,6 +1,6 @@
-# meu_portfolio
+# Meu portfolio
 
-A new Flutter project.
+Desenvolvido em flutter
 
 ## Getting Started
 
