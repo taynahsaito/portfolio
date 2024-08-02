@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+:root{
+    --principalcolor: #FA8DDB;
+    --descricaocolor: #818181;
+    --localizacao-cargocolor: #7D4D70
+}
+
+.nome{
+    color: var(--principalcolor);
+    font-size: 85px;
+}
+
+.descricao{
+    color: var(--descricaocolor);
+    width: 480px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 96vh;
+    justify-content: center;
+    gap: 50px;  
+}
+
+.localizacao img{
+    width: 25px;
+}
+
+.hero-right img{
+    width: 500px;
+    margin-top: 100px;
+}
+
+.localizacao-cargo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 25px;
+}
+
+.localizacao {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.localizacao h2{
+    font-size: 15px;
+    color: var(--localizacao-cargocolor);
+}
+.cargo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.cargo h2{
+    font-size: 15px;
+    color: var(--localizacao-cargocolor);
+}
+
+.cargo img{
+    width: 25px;
+}
+
+.setas{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.setas img{
+    width: 24px;
+}
