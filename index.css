@@ -10,8 +10,116 @@
 :root{
     --principalcolor: #FA8DDB;
     --descricaocolor: #818181;
-    --localizacao-cargocolor: #7D4D70
+    --localizacao-cargocolor: #7D4D70;
+    --corsecundaria: #C37CB8;
+    --corlinha: #ADADAD;
+    --corsombranavbar: rgba(204,204,204,0.46);
 }
+
+.navbar {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    -webkit-box-shadow: 0px 9px 5px -4px var(--corsombranavbar);
+    -moz-box-shadow: 0px 9px 5px -4px var(--corsombranavbar);
+    box-shadow: 0px 9px 5px -4px var(--corsombranavbar);
+  }
+  
+  .dark-mode{
+    animation: toBottom 1s ease-in-out;
+  }
+  
+  section {
+    background-color: var(--backgroundColor);
+  }
+  
+  .nav-list{
+    padding-left: 0px;
+
+  }
+  
+  .logo {
+    padding-left: 50px;
+    margin-top: 5px;
+    animation: toBottom 1s ease-in-out;
+  }
+  
+  .preferences {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 30px;
+  }
+  
+  .portugues {
+    background-color: var(--colorBackgroundButtons);
+    color: var(--colorPortugueseText);
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: var(--colorBackgroundButtons) solid 0px;
+    transition: 0.5s;
+    font-size: 13px;
+    animation: toBottom 1s ease-in-out;
+  }
+  
+  .portugues:hover {
+    background-color: var(--colorBackgroundButtonsHover);
+    color: var(--colorTexts);
+    padding: 7px 7px;
+    border-radius: 3px;
+    border: var(--colorBackgroundButtonsHover) solid 0px;
+  }
+  
+  .navlist ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 280px;
+  }
+  
+  .navlist a {
+    margin-top: 20px;
+    margin-inline: 20px;
+    text-decoration: none;
+    color: var(--localizacao-cargocolor);
+    font-size: 17px;
+    list-style-type: none;
+    font-weight: 600;
+    transition: 0.7s ease-in;
+    position: relative;
+  }
+  
+  .navlist a:before {
+    content: "";
+    background: var(--corsecundaria);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0%;
+    transition: 0.3s ease-out;
+      
+  }
+  
+  .navlist a:hover:before {
+    content: "";
+    background: var(--corsecundaria);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+  }
+  
+  .nav-item {
+    list-style: none;
+    align-items: center;
+    animation: toBottom 1s ease-in-out;
+    
+  }
 
 .nome{
     color: var(--principalcolor);
@@ -85,4 +193,46 @@
 
 .setas img{
     width: 24px;
+}
+
+.sobre-mim{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding-top: 60px;
+    margin-top: 90px;
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(204,204,204,0.46);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(204,204,204,0.46);
+    box-shadow: 0px 0px 8px 3px rgba(204,204,204,0.46);
+}
+
+.foto_2{
+    width: 550px;
+    
+}
+
+.titulo-sobre-mim{
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--principalcolor), var(--corsecundaria));
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linha{
+    width: 182px;
+    height: 1px;
+    background-color: var(--corlinha);
+    margin-block: 10px;
+}
+
+.descricao-sobre-mim{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--descricaocolor);
+    width: 610px;
+
 }
